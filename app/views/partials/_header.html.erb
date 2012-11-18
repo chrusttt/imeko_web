@@ -1,0 +1,28 @@
+<div class="row">
+    <div class="three columns">
+      
+    </div>
+    <div class="nine columns">
+      <ul class="nav-bar right">
+		<li <%=active_class('Home', 'index', 'overview', 'greetings')%>><%= link_to "Imeko 2013", root_path %></li>
+		<li <%= active_class('Home', 'program') %>><%= link_to "Program", program_path %></li>
+		<li <%= active_class('Participants', 'new', 'create') %>><%= link_to "Registrations", new_participant_path %></li>
+		<li <%=active_class('Home', 'cfg')%>><%= link_to "Call for Papers", call_for_papers_path %></li>
+		<li <%=active_class('Home', 'info')%>><%= link_to "General Information", info_path %></li>
+	</ul>
+</ul>
+    </div>
+  </div>
+  
+  <!-- End Header and Nav -->
+  
+  
+  <!-- First Band (Image) -->
+    
+  <div class="row">
+    <div class="twelve columns" id="logos">
+    <%= image_tag 'logo.jpg' %>
+      
+      <hr />
+    </div>
+  </div>

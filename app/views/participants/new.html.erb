@@ -1,0 +1,37 @@
+ <div class="row">
+    <div class="eight columns">
+    	<div class="six columns">
+     <%= simple_form_for @participant do |f| %>
+      	
+      		  <%= f.input :title, label: 'Title:', as: :select, collection: ['Mr.', 'Ms.', 'Dr', 'Prof.'] %>
+      		  <%= f.input :surname, label: "Surname:" %>
+			  <%= f.input :first_name, label: "First name:" %>
+			  <%= f.input :second_name, label: "Second name:" %>
+
+			<%= f.input :organisation, label: "Organisation:" %>
+			<%= f.input :department, label: "Department:" %>
+			<%= f.input :street, label: "Street, no.:" %>
+			<%= f.input :zip, label: "Postal code / ZIP code:" %>
+			<%= f.input :country, label: "Country:" %>
+			<%= f.input :vat, label: "VAT no.:" %>
+			<%= f.input :email, label: "Email:" %>
+			<%= f.input :mobile, label: "Mobile:" %>
+			<%= f.input :speaker, label: "Speaker?" %>
+			<%= f.input :file, label: "Attach your abstract (only .pdf files):", wrapper_html: { class: 'hidden_fields'} %>
+			<%= f.button :submit %>
+
+		<%end%>
+	</div>
+    </div>
+    <div class="four columns">
+       <ul class="vertical tabs">
+          
+          <li <%= active_class('Participant', 'new')%>><%= link_to "Registration", root_path %></li>
+
+           <li <%= active_class('Participant', 'guides')%>><%= link_to "Guidelines", "#" %></li>
+
+          
+        </ul>
+    </div>
+  </div>
+  

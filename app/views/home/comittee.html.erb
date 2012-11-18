@@ -1,0 +1,32 @@
+ <div class="row">
+    <div class="eight columns">
+      <h3 class='center'>International Programm <span>Committee:</span> </h3>
+      <p><ul>
+  <li>Prof. Armando Albertazzi (Brazil)</li>
+  <li>Prof. Wojtek J. Bock (Canada)</li>
+  <li>Dr. Simone Carmignato (Italy)</li>
+  <li>Prof. Oguz Celikel (Turkey)</li>
+  <li>Prof. Xinyong Dong (China) </li>
+  <li>Prof. Małgorzata Kujawińska (Polska)</li>
+  <li>Prof. Risto Myllylla (Finland)</li>
+  <li>Dr. habil. Anne-Françoise Obaton (France) </li>
+  <li>Prof. Dr.-Ing. T. Pfeifer (Germany)</li>
+  <li>José Manuel Rebordão (Portugal)</li>
+  <li>Prof. Jin Shangzhong (China)  </li>
+  <li>Prof. Rainer Tutsch (Germany)</li>
+  <li>Prof. Bernhard Zagar (Austria)</li>
+</ul></p>
+    </div>
+    <div class="four columns">
+       <ul class="vertical tabs">
+          
+          <li <%= active_class('Home', 'index')%>><%= link_to "Greetings", root_path %></li>
+
+           <li <%= active_class('Home', 'comittee')%>><%= link_to "Organising Comittee", comittee_path %></li>
+
+          <li <%= active_class('Home', 'overview')%>><%= link_to "Brief Overview", overview_path %></li>
+
+        </ul>
+    </div>
+  </div>
+  
