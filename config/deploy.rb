@@ -2,7 +2,7 @@ require "bundler/capistrano"
 
 server "80.72.40.35", :web, :app, :db, primary: true
 
-set :application, "blog"
+set :application, "imeko"
 set :deploy_to, "/apps/#{application}"
 set :deploy_via, :remote_cache
 set :use_sudo, false

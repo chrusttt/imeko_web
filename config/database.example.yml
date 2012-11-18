@@ -45,7 +45,7 @@ test:
 production:
   adapter: postgresql
   encoding: unicode
-  database: imeko_web_prod
+  database: imeko_web_production
   pool: 5
   username: imeko_user
   password: tajny_pass
